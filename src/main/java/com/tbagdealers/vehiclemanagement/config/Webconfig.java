@@ -1,4 +1,4 @@
-package com.tbagdealers.config; // Adjust package to your configuration's location
+package com.tbagdealers.vehiclemanagement.config; // Corrected package to match your file path structure
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
