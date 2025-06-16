@@ -1,0 +1,73 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.next
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.backup
+pom.xml.entries
+.mvn/timing.properties
+
+# Gradle
+.gradle/
+build/
+.settings/
+.project
+.classpath
+
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# STS / Eclipse / IntelliJ
+.project
+.settings
+.metadata
+.classpath
+.springBeans
+.factorypath
+.history
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+*.exe
+*.dll
+*.so
+*.obj
+*.o
+*.lib
+
+# Environment variables
+.env
+.env.local
+
+# For Spring Boot DevTools
+*.log
+# Specific to Spring Boot
+!**/src/main/**/target/
+!**/src/test/**/target/
+# IntelliJ
+*.iml
+.idea/
+# VS Code
+.vscode/
+
+# Package Lock (if applicable for mixed projects)
+package-lock.json
+npm-debug.log*
+yarn-debug.log*maven_build_output.txt
+target/
