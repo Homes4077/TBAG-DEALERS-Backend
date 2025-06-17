@@ -6,12 +6,14 @@ WORKDIR /app
 
 # Copy the Maven build files (pom.xml) first to leverage Docker cache
 COPY pom.xml .
-# Copy the source code
+# Copy the source code (including mvnw if you still have it, though it won't be used now)
 COPY src ./src
 
-# Build the Spring Boot application using Maven
-# The -DskipTests flag skips tests during build to speed up deployment
-RUN ./mvnw clean install -DskipTests
+# --- NEW ADDITION: Install Maven ---
+RUN apt-get update && apt-get install -y maven && rm -rf /var/lib/apt/lists/*
+
+# --- MODIFIED: Build the Spring Boot application using the installed Maven ---
+RUN mvn clean install -DskipTests
 
 # Use a smaller base image for the final stage to reduce image size
 FROM openjdk:17-jdk-slim
